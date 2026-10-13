@@ -1,0 +1,28 @@
+# Dependencies and generated files
+node_modules/
+*.backup-*
+*.bak
+
+# Secrets and signing keys
+.env
+.env.*
+*.jks
+*.keystore
+secrets/# Bolt Build & Cache Directories
+.bolt/
+build/
+out/
+*.aix
+tree.txt
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+# Local backups and compiled classes
+*.before-*
+*.backup-*
+*.class

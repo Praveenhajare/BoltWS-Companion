@@ -1,0 +1,91 @@
+# Author name.
+author: 'oham kumar'
+
+# Bolt build metadata.
+bolt_version: '2.0.0'
+build_time: '11.24am 13.10.2026'
+
+# The minimum Android SDK level your extension supports.
+min_sdk: 14
+
+# Define the compile Android SDK API level.
+# compile_sdk: 35
+
+# If enabled, the D8/R8 tool will generate desugared dex (classes.dex)
+desugar_dex: true
+
+# If enabled, extension will be optimized using R8.
+R8: false
+
+# If enabled, extension will be optimized using ProGuard.
+proguard: false
+
+# If enabled, extension annotations will be stripped for smaller size.
+deannonate: true
+
+# Kotlin Compiler version.
+kotlin_version: '1.9.22'
+
+# External libraries your extension depends on.
+dependencies:
+  - org.java-websocket:Java-WebSocket:1.5.7
+  - org.java-websocket:Java-WebSocket:1.5.7
+
+# Compile-time dependencies resolving for GradleResolver/MavenResolver [Local Only]
+# compile_time:
+#   - mylibrary.jar
+
+# Default Maven repositories includes Maven Central, Google Maven, JitPack and
+# JCenter.
+# repositories:
+#   - https://jitpack.io
+
+# Assets that your extension needs.
+# assets:
+#   - data.json
+
+# Attach custom XML to bundle it with APK resources.
+# xmls:
+#   - xml/network_security_config.xml
+#   - xml/provider_paths.xml
+
+# Similar to dependencies, except libraries defined as provided are not included
+# in the final AIX.
+# provided_dependencies:
+#   - com.example:foo-bar:1.2.3
+
+# Minimization exclusions.
+# minimize:
+#   exclude_dependency:
+#     - org.slf4j:slf4j-simple:.*
+#   exclude_project:
+#     - :api
+
+# Enable to increment the version number of each component during build.
+auto_version: false
+
+# Homepage of your extension.
+# homepage: https://github.com/TechHamara/bolt-cli
+
+# Bytecode-level string obfuscation tool.
+strguard:
+  enabled: false
+  key: "TechHamara-MyKey-2026-Secret"
+  packages:
+    - "com.supertech.BoltWS"
+
+# Implement Package Relocation (Shading).
+relocation:
+  EnableAutoRelocation: true
+  skipStringConstants: true
+
+# Enable modern Java API support on older devices.
+coreLibraryDesugaring: false
+
+# Native C/C++ (JNI & NDK) Support.
+# ndk:
+#   enabled: true
+#   module: native-lib
+#   abis:
+#     - armeabi-v7a
+#     - arm64-v8a
