@@ -1,6 +1,21 @@
-# Dependencies and generated files
+# Dependencies
 node_modules/
+
+# Build outputs
+build/
+out/
+.bolt/
+bolt-patch/classes/
+*.class
+*.aix
+
+# IDE files
+.vscode/
+.kilo/
+
+# Backup files
 *.backup-*
+*.before-*
 *.bak
 
 # Secrets and signing keys
@@ -8,21 +23,8 @@ node_modules/
 .env.*
 *.jks
 *.keystore
-secrets/# Bolt Build & Cache Directories
-.bolt/
-build/
-out/
-*.aix
-tree.txt
+secrets/
 
-# IDE files
-.idea/
-*.iml
-.vscode/
-.project
-.classpath
-.settings/
-# Local backups and compiled classes
-*.before-*
-*.backup-*
-*.class
+# OS files
+.DS_Store
+Thumbs.db
