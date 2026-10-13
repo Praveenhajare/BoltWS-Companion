@@ -28,3 +28,7 @@ secrets/
 # OS files
 .DS_Store
 Thumbs.db
+.classpath
+.project
+.idea/
+tree.txt
